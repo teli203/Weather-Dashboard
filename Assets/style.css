@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'canadra', san-serif;
+    font-family: 'Cambria', san-serif;
     background-color: aqua;
     background-size: cover;
     background-position: top center;
@@ -32,8 +32,8 @@ header input {
     outline: none;
     background-color: rgba(255, 255, 255, 0.3);
 
-    font-size: 15px;
-    font-weight: 275;
+    font-size: 30px;
+    font-weight: 325;
     transition: 0.2s ease-out;
 }
 
