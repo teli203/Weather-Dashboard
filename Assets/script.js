@@ -24,12 +24,12 @@ function displayResults (weather) {
     city.innerText = '${weather.name}, $weather.sys.country}';
 
     let temp = document.querySelector('.current .temp');
-    temp.innerHTML = '${Math.round{weather.main.temp)}<span>°c</span>';
+    temp.innerHTML = '${Math.round(weather.main.temp)}<span>°c</span>';
 
 
     let weather_el = document.querySelector('.current .weather');
     weather_el.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('hi-low');
-    hilow.innerText = '${weather.main.temp_min}°c / ${weather.main.temp_max}°c';
+    hilow.innerText = '${Math.round(weather.main.temp_min}°c / ${Math.round(weather.main.temp_max)}°c';
 }
