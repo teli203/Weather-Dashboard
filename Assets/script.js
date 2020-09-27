@@ -1,6 +1,6 @@
 const api = {
-key: "api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={API key}",
-baseurl: "https://api.openwesthermap.org/data/2.5/"
+key: "http://maps.openweathermap.org/maps/2.0/weather/{op}/{z}/{x}/{y}&appid={API key}",
+baseurl: "http://maps.openweathermap.org/maps/2.0/weather/TA2/{z}/{x}/{y}?date=1527811200&opacity=0.9&fill_bound=true&appid={API key}"
 }
 
 const searchbox = document.querySelector('.search-box');
