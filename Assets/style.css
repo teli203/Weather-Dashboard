@@ -36,6 +36,9 @@ header input {
     font-weight: 325;
     transition: 0.2s ease-out;
 }
+header input:focus {
+    background-color: silver;
+}
 
 main {
     flex: 1 1 100;
@@ -47,41 +50,39 @@ main {
 }
 
 .location .city {
-    color: #fff;
+    color: rgba(11, 4, 116, 0.3);
     font-size: 30px;
     font-weight: 450;
     margin-bottom: 5px;
 }
 
-.location .date {
-    color: #fff;
+.location .current {
+    color: #f7d0234d;
     font-size: 100px;
 }
 
 .current .temp {
-    color: #fff;
+    color: rgba(11, 4, 116, 0.3);
     font-size: 100px;
     font-weight: 900;
-    margin: 30px 0px;
-    text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+    margin: 30px 0px; 
 }
 
 .current .temp span {
     font-weight: 500;
+
 }
 
 .current .weather {
-    color: #fff;
+    color: rgb(19, 15, 15);
     font-size: 32px;
     font-weight: 650;
     font-style: italic;
     margin-bottom: 10px;
-    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
 }
 
 .current .hi-low {
-    color: #fff;
+    color: rgb(19, 15, 15);
     font-size: 25px;
     font-weight: 475;
-    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
 }
