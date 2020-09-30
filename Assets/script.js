@@ -1,6 +1,6 @@
 const api = {
-key: "http://maps.openweathermap.org/maps/2.0/weather/{op}/{z}/{x}/{y}&appid={API key}",
-baseurl: "http://maps.openweathermap.org/maps/2.0/weather/TA2/{z}/{x}/{y}?date=1527811200&opacity=0.9&fill_bound=true&appid={API key}"
+key: "094533805c4db4f536e9098a9a6d35cf",
+base: "api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=094533805c4db4f536e9098a9a6d35cf"
 }
 
 const searchbox = document.querySelector('.search-box');
@@ -12,11 +12,11 @@ function setQuery (evt) {
     }
 }
 
-function getResults (query) {
-    fetch('${api.base}weather?q=${query}&units=metric&APPID=${api.key}')
+function getResult (query) {
+    fetch('${api.base}weather?q={query}&units=metric&APPID=${api.key}')
     .then(weather => {
         return weather.json();
-    }).then(displayResults);
+    }).then(displayresults);
 }
 
 function displayResults (weather) {
