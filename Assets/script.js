@@ -34,4 +34,20 @@ function displayResults (weather) {
 
     let hilow = document.querySelector('.hi-low');
     hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+
+
+    let humidity = document.querySelector('.current .humidity');
+    humidity.innerText = `${Math.round(weather.humidity[0].main)}%`;
+
+    let windspeed = document.querySelector(' .current .wind-speed');
+    windspeed.innerText = `${Math.round(weather.windspeed[0].main)}mph`;
+
+
+    let uvindex = document.querySelector('.current .uv-index');
+    uvindex.innerText = `${Math.round(weather.uvindex[0].main)}High`;
+
+
+
+
+
 }
