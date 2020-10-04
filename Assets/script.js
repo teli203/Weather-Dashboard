@@ -26,25 +26,25 @@ function displayResults (weather) {
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
     let temp = document.querySelector('.current .temp');
-    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°f</span>`;
 
 
     let weather_el = document.querySelector('.current .weather');
     weather_el.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('.hi-low');
-    hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+    hilow.innerText = `${Math.round(weather.main.temp_min)}°f / ${Math.round(weather.main.temp_max)}°f`;
 
 
     let humidity = document.querySelector('.current .humidity');
-    humidity.innerText = `${Math.round(weather.humidity[0].main)}%`;
+    humidity.innerText = `${Math.round(weather.main.humidity)}%`;
 
-    let windspeed = document.querySelector(' .current .wind-speed');
-    windspeed.innerText = `${Math.round(weather.windspeed[0].main)}mph`;
+    let windspeed_el = document.querySelector('.current .wind-speed');
+    windspeed.innerText = `${Math.round(weather.windspeed.main)}mph`; 
 
 
     let uvindex = document.querySelector('.current .uv-index');
-    uvindex.innerText = `${Math.round(weather.uvindex[0].main)}High`;
+    uvindex.innerText = `${Math.round(weather.uvindex.main)}High`;
 
 
 
